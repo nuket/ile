@@ -1,7 +1,7 @@
 I Like Everything
 =================
 
-I Like Everything is a Chrome Extension designed to click all of the Like buttons it encounters on pages that a user is browsing.
+I Like Everything is a Google Chrome Extension designed to click all of the Like buttons it encounters on pages that a user is browsing.
 
 It looks like this when it is running in a page:
 
@@ -15,6 +15,16 @@ It does not currently seek out and click Like buttons in a Like Box, as describe
 
 Installation
 ============
+
+Grab https://github.com/nuket/ile/zipball/master
+Unpack it anywhere on your disk.
+In Google Chrome, open up chrome://extensions
+Click the 'Load unpacked extension...' button.
+Navigate to and select the folder containing the unpacked extension files on your disk.
+
+The following things should show up in Google Chrome:
+!(https://raw.github.com/nuket/ile/master/loaded-extension-1.png)
+!(https://raw.github.com/nuket/ile/master/loaded-extension-2.png)
 
 Notes
 =====
