@@ -7,7 +7,9 @@ It looks like this when it is running in a page:
 
 ![Countdown timer overlay.](https://raw.github.com/nuket/ile/master/what-it-does.png)
 
-The purpose of this plugin is to generate noise, possibly making it more difficult to separate the things we do Like from the things we don't. After all, if you Like everything, then really you don't Like anything. As a representation of our interests, Like becomes even more meaningless.
+The plugin will currently wait between 5 and 60 seconds before clicking the Like button, this is what the red overlay text in the image will indicate, while also counting the seconds down.
+
+The purpose of this plugin is to generate noise, possibly making it more difficult to separate the things we do Like from the things we don't. After all, if you Like everything, then really you don't Like anything. As a representation of one's interests, Like becomes even more meaningless.
 
 At the moment, the plugin seeks out and clicks Like buttons created using the IFRAME method of embedding them in a page, as described in the Facebook developer documentation here: http://developers.facebook.com/docs/reference/plugins/like/
 
@@ -16,25 +18,26 @@ It does not currently seek out and click Like buttons in a Like Box, as describe
 Installation
 ============
 
-Grab https://github.com/nuket/ile/zipball/master
-Unpack it anywhere on your disk.
-In Google Chrome, open up chrome://extensions
-Click the 'Load unpacked extension...' button.
-Navigate to and select the folder containing the unpacked extension files on your disk.
+1. Grab https://github.com/nuket/ile/zipball/master
+2. Unpack it anywhere on your disk.
+3. In Google Chrome, open up chrome://extensions
+4. Click the 'Load unpacked extension...' button.
+5. Navigate to and select the folder containing the unpacked extension files on your disk.
 
 The following things should show up in Google Chrome:
-!(https://raw.github.com/nuket/ile/master/loaded-extension-1.png)
-!(https://raw.github.com/nuket/ile/master/loaded-extension-2.png)
 
-Notes
-=====
+**Extension Information**
 
-The plugin will currently wait between 5 and 60 seconds before clicking the Like button.
+![Loaded extension info in chrome://extensions](https://raw.github.com/nuket/ile/master/loaded-extension-1.png)
+
+**Browser Action Icon**
+
+![Browser action Icon, for the extension](https://raw.github.com/nuket/ile/master/loaded-extension-2.png)
 
 Feature Requests
 ================
 
-Features that need to be added to the plugin (and for which I would be grateful for Pull Requests) include:
+Features that need to be added to the plugin (and for which I would be grateful for Pull Requests if I don't get to it first) include:
 
 1. Like Box button clicking
 2. Instant Like
