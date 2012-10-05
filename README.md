@@ -5,7 +5,7 @@ I Like Everything is a Chrome Extension designed to click all of the Like button
 
 It looks like this when it is running in a page:
 
-![Countdown timer overlay.](what-it-does.png)
+![Countdown timer overlay.](https://raw.github.com/nuket/ile/master/what-it-does.png)
 
 The purpose of this plugin is to generate noise, possibly making it more difficult to separate the things we do Like from the things we don't. After all, if you Like everything, then really you don't Like anything. As a representation of our interests, Like becomes even more meaningless.
 
