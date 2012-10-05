@@ -13,6 +13,9 @@ At the moment, the plugin seeks out and clicks Like buttons created using the IF
 
 It does not currently seek out and click Like buttons in a Like Box, as described in the Facebook developer documentation here: http://developers.facebook.com/docs/reference/plugins/like-box/.
 
+Installation
+============
+
 Notes
 =====
 
