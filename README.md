@@ -34,6 +34,11 @@ The following things should show up in Google Chrome:
 
 ![Browser action Icon, for the extension](https://raw.github.com/nuket/ile/master/loaded-extension-2.png)
 
+Configuration
+=============
+
+At the moment, the only configurable option is to enable or disable the extension via the Browser Action icon.
+
 Feature Requests
 ================
 
