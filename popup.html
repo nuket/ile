@@ -1,0 +1,88 @@
+<!--
+/*
+ * Copyright (C) 2012 Max Vilimpoc
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+-->
+<!doctype html>
+<html>
+<head>
+<title>I Like Everything Popup</title>
+<style>
+body {
+	width: 335px;
+	margin: 15px;
+	text-align: justify;
+}
+img {
+	padding: 15px;
+	border: 1px dashed lightBlue;
+}
+#enablePluginText:link {
+	color: black;
+	text-decoration: none;
+}
+#enablePluginText:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+	<h1>I Like Everything</h1>
+
+	<p>
+	<input id="enablePluginCheckbox" type="checkbox"/> <a href="#" id="enablePluginText">Enable/disable plugin.</a> 
+
+	<p>
+	The purpose of this plugin is to automatically click 
+	the Like buttons on all of the websites that you browse.
+	
+	<p>
+	It looks like this, when it is running:
+	
+	<p>
+	<img src="what-it-does.png" alt="Timer counting down to click."/>
+
+	<p>
+	The red box with the number in it is a countdown timer, 
+	which randomly waits between 5 and 60 seconds before it clicks the Like button.
+	
+	<h2>Am I Logged In?</h2>
+
+	<div id="mustLogin" style="display: none;">
+		<p>
+		You need to make sure that you are logged into Facebook
+		or this won't work. 
+
+		<p>
+		<a href="https://www.facebook.com" target="_blank">Log in to Facebook now</a>
+	</div>
+	
+	<div id="alreadyLoggedIn" style="display: none;">
+		<p>
+		Looks like you are already logged into Facebook, so
+		this plugin should work.
+	</div>
+</body>
+
+<!-- JavaScript and HTML must be in separate files for security. -->
+<script src="popup.js"></script>
+
+</html>

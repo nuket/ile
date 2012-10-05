@@ -1,0 +1,52 @@
+/*
+ * Copyright (C) 2012 Max Vilimpoc
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+{
+	"name": "I Like Everything",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Yippeekayyay.",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "I Like Everything",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"js": [ "zepto.js", "contentscript.js" ],
+		"all_frames": true 
+	}],
+	"web_accessible_resources": ["inject.js"],
+	"permissions": [ "cookies", "*://*.facebook.com/*" ]
+}
+
+// all_frames is set because the Facebook Like button often uses iframes 
+// to be loaded statically.
+
+// web_accessible_resources must be set for the injection to work.
+
+// Setting the cookies permissions to only *.facebook.com means that when a
+// cookies.getAll() is done in backround.js, only Facebook cookies are 
+// returned.
